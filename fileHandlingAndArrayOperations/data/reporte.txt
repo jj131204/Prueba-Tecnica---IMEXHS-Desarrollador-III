@@ -1,0 +1,4 @@
+Informe de análisis para data/sample.csv
+
+Edad: Media = 28.00, Desv. Est. = 4.95
+Altura: Media = 1.70, Desv. Est. = 0.07

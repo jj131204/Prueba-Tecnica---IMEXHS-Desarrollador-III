@@ -1,0 +1,2 @@
+2025-07-01 21:09:29,048 - ERROR - Archivo DICOM no existe: .\ejemplo_dicom.dcm
+2025-07-01 21:14:04,818 - ERROR - No se pudo extraer la imagen DICOM: Cannot handle this data type: (1, 1, 512), |u1
