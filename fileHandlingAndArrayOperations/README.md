@@ -23,7 +23,8 @@ recursionAndColors/
 
 ### 1. Clona el repositorio.
 
-### 2. Ejecuta el script principal:
+### 2. Abre una terminal y navega a la carpeta fileHandlingAndArrayOperations.
+### 3. Ejecuta el script principal:
 
 ```bash
 python index.py
