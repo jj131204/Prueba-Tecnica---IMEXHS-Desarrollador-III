@@ -35,8 +35,8 @@ def create_element(element: schemas.ElementDataCreate, db: Session = Depends(get
 def get_elements(
     db: Session = Depends(get_db),
     created_date: Optional[str] = Query(None),
-    average_before: Optional[float] = Query(None, alias="avg_before_gt"),
-    average_after: Optional[float] = Query(None, alias="avg_after_lt"),
+    average_before: Optional[float] = Query(None),
+    average_after: Optional[float] = Query(None),
     data_size: Optional[int] = Query(None)
 ):
     query = db.query(models.ElementData)

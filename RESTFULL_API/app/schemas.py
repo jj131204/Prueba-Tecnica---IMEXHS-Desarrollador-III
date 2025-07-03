@@ -15,11 +15,14 @@ class Device(DeviceBase):
     id: int
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 
 class ElementDataBase(BaseModel):
     device_id: int
+
+
+class ElementDataCreate(ElementDataBase):
     data: List[float] = Field(..., example=[1.0, 2.5, 3.3])
 
     @validator("data")
@@ -31,10 +34,6 @@ class ElementDataBase(BaseModel):
         return value
 
 
-class ElementDataCreate(ElementDataBase):
-    pass
-
-
 class ElementData(ElementDataBase):
     id: int
     average_before: float
@@ -44,4 +43,4 @@ class ElementData(ElementDataBase):
     updated_date: datetime
 
     class Config:
-        orm_mode = True
+        from_attributes = True

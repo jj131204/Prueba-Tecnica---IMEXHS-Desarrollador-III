@@ -57,7 +57,7 @@ def solve_tower(n, disks):
 if __name__ == "__main__":
     # valores para ejecutar la funcion
     n = 3
-    disks = [(3, "red"), (2, "blue"), (1, "green")]
+    disks = [(3, "red"), (2, "blue"), (1, "red")]
 
 
     result = solve_tower(n, disks)

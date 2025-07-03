@@ -22,6 +22,5 @@ class ElementData(Base):
     data_size = Column(Integer)
     created_date = Column(DateTime, default=datetime.utcnow)
     updated_date = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
-
     device = relationship("Device", back_populates="elements")
 

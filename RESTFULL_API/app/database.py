@@ -3,8 +3,8 @@ from sqlalchemy.orm import sessionmaker, declarative_base
 
 # Cambia estos valores por los tuyos
 DB_USER = "postgres"
-DB_PASSWORD = "tu_contraseña"
-DB_HOST = "localhost"
+DB_PASSWORD = "admin123"
+DB_HOST = "127.0.0.1"
 DB_PORT = "5432"
 DB_NAME = "sensor_db"
 

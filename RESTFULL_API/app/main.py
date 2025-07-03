@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from .database import engine, Base
-from .routers import elements
+from .routers import routers
 
 app = FastAPI(
     title="Sensor Data API",
@@ -12,4 +12,4 @@ app = FastAPI(
 Base.metadata.create_all(bind=engine)
 
 # Incluir rutas
-app.include_router(elements.router)
+app.include_router(routers.router)

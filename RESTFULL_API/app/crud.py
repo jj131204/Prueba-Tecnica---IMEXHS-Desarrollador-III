@@ -8,7 +8,7 @@ def create_device(db: Session, device: schemas.DeviceCreate):
     db.add(db_device)
     db.commit()
     db.refresh(db_device)
-    return db_device
+    return db_device    
 
 
 def create_element_data(db: Session, element: schemas.ElementDataCreate):
@@ -24,7 +24,8 @@ def create_element_data(db: Session, element: schemas.ElementDataCreate):
         average_after=avg_after,
         data_size=len(data),
         created_date=datetime.utcnow(),
-        updated_date=datetime.utcnow()
+        updated_date=datetime.utcnow(),
+        
     )
     db.add(db_element)
     db.commit()
