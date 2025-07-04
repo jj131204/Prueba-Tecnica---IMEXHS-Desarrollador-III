@@ -1,59 +1,66 @@
-# AngularApp
+# Estimador de Área de Manchas en Imágenes Binarias
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.3.
+Este proyecto es una aplicación web simple desarrollada con Angular que permite a los usuarios cargar una imagen binaria (blanco y negro) y estimar el área de las "manchas" (píxeles negros) utilizando el método de muestreo aleatorio (Monte Carlo). Los resultados del cálculo se muestran en una ventana modal.
 
-## Development server
+## 🚀 Características
 
-To start a local development server, run:
+* **Carga de Imagen:** Sube fácilmente imágenes binarias (PNG, JPG, etc.).
+* **Estimación de Área:** Calcula el área de las manchas (píxeles negros) utilizando el método de Monte Carlo.
+* **Número de Puntos Configurable:** Slider para ajustar la cantidad de puntos aleatorios utilizados en el cálculo, permitiendo variar la precisión.
+* **Resultados Claros:** Visualización de los resultados del cálculo en una ventana modal intuitiva.
+* **Interfaz Moderna:** Estilizado con **Tailwind CSS** para una experiencia de usuario limpia y responsiva.
+* **Arquitectura Modular:** Lógica separada en servicios de Angular para mejorar la mantenibilidad y la escalabilidad (con Observables de RxJS para gestión de estado).
 
-```bash
-ng serve
-```
+## 🛠️ Tecnologías Utilizadas
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+* **Angular CLI** (versión recomendada: 17.x o superior)
+* **TypeScript**
+* **HTML5**
+* **CSS3** (con **Tailwind CSS** para utilidades)
+* **RxJS** (para gestión de estado reactiva en servicios)
 
-## Code scaffolding
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
-```bash
-ng generate component component-name
-```
+## ⚙️ Instalación y Ejecución
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Para poner en marcha el proyecto en tu máquina local, sigue estos pasos:
 
-```bash
-ng generate --help
-```
+### Prerrequisitos
 
-## Building
+Asegúrate de tener instalado lo siguiente:
 
-To build the project run:
+* **Node.js**: [Descargar e instalar Node.js](https://nodejs.org/en/download/) (incluye npm).
+* **Angular CLI**: Instálalo globalmente ejecutando:
+    ```bash
+    npm install -g @angular/cli
+    ```
 
-```bash
-ng build
-```
+### Pasos
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+1.  **Clona el repositorio:**
+    ```bash
+    git clone <URL_DE_TU_REPOSITORIO>
+    cd <nombre-de-tu-carpeta-de-proyecto>
+    ```
 
-## Running unit tests
+2.  **Instala las dependencias:**
+    ```bash
+    npm install
+    ```
+    Si usas `yarn`:
+    ```bash
+    yarn install
+    ```
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+3.  **Inicia el servidor de desarrollo:**
+    ```bash
+    ng serve
+    ```
+    Esto compilará la aplicación y la iniciará en un servidor local. Podrás acceder a ella abriendo tu navegador en `http://localhost:4200/`. La aplicación se recargará automáticamente si cambias alguno de los archivos fuente.
 
-```bash
-ng test
-```
+## 📝 Uso
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+1.  **Cargar Imagen:** Haz clic en el área "Insertar imagen" o en el botón "Cambiar imagen" si ya hay una cargada. Selecciona una imagen binaria (con manchas negras sobre fondo blanco preferiblemente, o viceversa si el código se ajusta).
+2.  **Ajustar Puntos:** Usa el slider para seleccionar la cantidad de puntos aleatorios a utilizar en el cálculo (cuantos más puntos, mayor precisión, pero más tiempo de cálculo).
+3.  **Calcular Área:** Haz clic en el botón "Calcular".
+4.  **Ver Resultados:** Aparecerá una ventana modal con los resultados de la estimación del área de la mancha.
