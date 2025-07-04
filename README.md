@@ -38,6 +38,6 @@ Aquí encontrarás los siguientes proyectos, cada uno con su propio `README.md` 
 
 * **Descripción:** Una aplicación web frontend desarrollada con Angular que permite a los usuarios cargar una imagen binaria y estimar el área de las "manchas" (píxeles negros) utilizando el método de muestreo aleatorio (Monte Carlo). Incluye una interfaz de usuario limpia con Tailwind CSS y una arquitectura modular basada en servicios y RxJS.
 * **Tecnologías Clave:** Angular, TypeScript, Tailwind CSS, RxJS, HTML Canvas API.
-* **Enlace:** [Ver Detalles del Proyecto](./Estimador_de_Area_Manchas/README.md) *(Ajusta esta ruta si la carpeta tiene un nombre diferente)*
+* **Enlace:** [Ver Detalles del Proyecto](./angularApp/README.md) *(Ajusta esta ruta si la carpeta tiene un nombre diferente)*
 
 ---
