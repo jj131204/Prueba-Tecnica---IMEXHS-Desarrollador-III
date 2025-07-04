@@ -35,10 +35,10 @@ export class AreaCalculationService {
       // Calcular el índice en el array de píxeles (RGBA)
       const index = (y * imageWidth + x) * 4;
 
-      
-      const isWhite = data[index] > 200 && data[index + 1] > 200 && data[index + 2] > 200;
 
-      if (isWhite) {
+      const isBlack = data[index] < 50 && data[index + 1] < 50 && data[index + 2] < 50;
+
+      if (isBlack) { // Si es negro, cuenta como mancha
         pointsInStain++;
       }
     }
