@@ -12,7 +12,7 @@ Aquí encontrarás los siguientes proyectos, cada uno con su propio `README.md` 
 
 * **Descripción:** Se le asignan n discos de diferentes tamaños y colores apilados en una varilla de origen. El objetivo es transferir todos los discos a una varilla de destino utilizando una varilla auxiliar.
 * **Tecnologías Clave:** Python.
-* **Enlace:** [Ver Detalles del Proyecto](./recursionAndColors/README.md) 
+* **Enlace:** [Ver Detalles del Proyecto](./recursionAndColors/readme.md) 
 
 ---
 
