@@ -33,6 +33,9 @@ def create_element_data(db: Session, element: schemas.ElementDataCreate):
     return db_element
 
 
+
+
+
 def get_elements(db: Session, skip: int = 0, limit: int = 100):
     return db.query(models.ElementData).offset(skip).limit(limit).all()
 
